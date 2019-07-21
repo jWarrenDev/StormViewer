@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Picture" id="Lx5-31-Oe2">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Picture" id="Lx5-31-Oe2">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lx5-31-Oe2" id="j08-x7-Etm">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -33,9 +33,9 @@
                             <outlet property="delegate" destination="9l9-eY-hIi" id="s1q-yb-Cac"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Dwc-sn-PfN"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="Dwc-sn-PfN"/>
                     <connections>
-                        <segue destination="hzz-ol-GQa" kind="show" id="wst-f2-Rwf"/>
+                        <segue destination="hzz-ol-GQa" kind="show" identifier="Detail" id="wst-f2-Rwf"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CgH-JV-bPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -50,16 +50,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LiD-ae-Pju">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LiD-ae-Pju">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="EOA-rz-lg1" firstAttribute="bottom" secondItem="LiD-ae-Pju" secondAttribute="bottom" id="W4H-I5-Vrh"/>
-                            <constraint firstItem="LiD-ae-Pju" firstAttribute="top" secondItem="EOA-rz-lg1" secondAttribute="top" id="ltk-Bz-7af"/>
-                            <constraint firstItem="EOA-rz-lg1" firstAttribute="trailing" secondItem="LiD-ae-Pju" secondAttribute="trailing" id="o4f-hT-UCu"/>
-                            <constraint firstItem="LiD-ae-Pju" firstAttribute="leading" secondItem="EOA-rz-lg1" secondAttribute="leading" id="z7x-st-eVL"/>
+                            <constraint firstItem="LiD-ae-Pju" firstAttribute="leading" secondItem="EOA-rz-lg1" secondAttribute="leading" id="0MG-pF-MZs"/>
+                            <constraint firstItem="LiD-ae-Pju" firstAttribute="bottom" secondItem="EOA-rz-lg1" secondAttribute="bottom" id="3SE-Ws-cLF"/>
+                            <constraint firstItem="LiD-ae-Pju" firstAttribute="top" secondItem="EOA-rz-lg1" secondAttribute="top" id="4HZ-bS-4Ls"/>
+                            <constraint firstItem="LiD-ae-Pju" firstAttribute="leading" secondItem="04C-Zi-6bx" secondAttribute="leading" id="GXc-gy-UMn"/>
+                            <constraint firstItem="LiD-ae-Pju" firstAttribute="trailing" secondItem="EOA-rz-lg1" secondAttribute="trailing" id="NJm-hm-Aai"/>
+                            <constraint firstItem="LiD-ae-Pju" firstAttribute="bottom" secondItem="EOA-rz-lg1" secondAttribute="bottom" id="dvZ-Rx-hkV"/>
+                            <constraint firstAttribute="trailing" secondItem="LiD-ae-Pju" secondAttribute="trailing" id="oTM-as-055"/>
+                            <constraint firstItem="LiD-ae-Pju" firstAttribute="top" secondItem="EOA-rz-lg1" secondAttribute="top" id="ybF-5L-3xD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EOA-rz-lg1"/>
                     </view>
@@ -69,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o24-cl-QL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1835" y="-62"/>
+            <point key="canvasLocation" x="1834.7826086956522" y="-62.276785714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="esa-fo-i00">
